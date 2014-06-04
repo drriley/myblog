@@ -1,3 +1,68 @@
+ span {
+     font-weight: bold;
+ }
+ 
+ 
+ #emailbox
+ {
+   width: 200px;
+   
+ }
+ 
+ #emailbutton
+ {
+   width: 50px;
+   
+ }
+ 
+ #email
+ {
+   
+   
+   background-color:#D8D8D8;
+   padding-bottom:25px;
+   overflow: hidden;
+   vertical-align: bottom
+   
+ }
+ 
+ #footer
+ {
+   height: 50px;
+   padding-left:50px;
+   background-color: white;
+   
+ }
+ 
+ 
+ 
+ 
+ .circular {
+ 	width: 140px;
+ 	height: 150px;
+ 	border-radius: 150px;
+ 	-webkit-border-radius: 150px;
+ 	-moz-border-radius: 150px;
+ 	background: url(me2.png) no-repeat;
+ 	} 
+ 
+ 
+ 
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18;
+  color: #434a54;
+  background-color: white;
+}
+
+h1,h2,h3,h4,h5 {
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-weight: 400;
+}
+
+
+
+
 .blogdiv
 {
 height: 500px;
@@ -10,4 +75,11 @@ overflow: hidden;
 height: 300px;
 background-color:#FFF;
 
+}
+
+#disqus
+{
+  
+  background-color:#F7D358;
+  
 }

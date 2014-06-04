@@ -38,6 +38,13 @@ app.get('/blog1', function(req, res){
   res.render('blog1.ejs');
 });
 
+app.get('/blog2', function(req, res){
+  res.render('blog2.ejs');
+});
+
+app.get('/blogpost', function(req, res){
+  res.render('blogpost.ejs');
+});
 
 app.get('/resume', function(req, res){
   res.render('resume.ejs');
