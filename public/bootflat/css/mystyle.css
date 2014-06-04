@@ -9,6 +9,13 @@
    
  }
  
+ #introtext
+ {
+   width: 450px;
+   max-width:450px;
+   
+ }
+ 
  #emailbutton
  {
    width: 50px;
@@ -18,9 +25,9 @@
  #email
  {
    
-   max-width:275px;
+   max-width:250px;
    background-color:#D8D8D8;
-   padding-bottom:25px;
+   padding-bottom:15px;
    overflow: hidden;
    vertical-align: bottom
    
