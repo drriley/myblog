@@ -1,3 +1,22 @@
+ #resumenav
+ {
+   width: 250px;
+   height: 250px;
+   padding-left: 50px;
+   float: left;
+   
+ }
+ 
+ #resumecontent
+ {
+   float:left;
+   padding-left: 50px;
+   padding-top: 25px;
+   width: 700px;
+   
+ }
+ 
+ 
  span {
      font-weight: bold;
  }

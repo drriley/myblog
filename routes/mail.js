@@ -12,7 +12,8 @@ exports.subscribe = function(req, res){
   console.log(req.body.email);
   mc.lists.subscribe({id: listID, email:{email:req.body.email}}, function(data) {
       
-      res.redirect('/');
+      res.writeHead(200);
+       res.end();
     },
     function(error) {
       if (error.error) {
@@ -20,6 +21,6 @@ exports.subscribe = function(req, res){
       } else {
         req.session.error_flash = 'There was an error subscribing that user';
       }
-      res.redirect('/');
+       
     });
 };
