@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="/bootflat/css/mystyle.css">
  		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script type='text/javascript' src="/scroller.js"></script>
+		<script type='text/javascript' src="/mailchimp.js"></script>
 		<script type='text/javascript' src="/bootflat/js/icheck.min.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
@@ -62,16 +63,19 @@
 			
 	<div class="row">
 		<div class="col-md-3 col-md-offset-5" id="email">
-			<h4><center>Join the email list<center></h4>
-				
+			<h4><center>Join the emailing list<center></h4>
+				<!-- Form work-->
+
 					<div class="input-group">
 					<input type="text" class="form-control" id="emailbox" placeholder="Enter your email here">
 						<div class="input-group-btn">
-							<button type="button" id="emailbutton" class="btn btn-primary btn-block">Submit</button>
+							<button type="button" id="emailbutton" class="btn btn-primary btn-block" onclick="emailpost();" tabindex="-1">Submit</button>
 						</div>
 						
 					</div>
 					<center><p>No Spam.</p><center>
+				
+				<!-- Form end-->
 		</div>	
 	</div>	
 	

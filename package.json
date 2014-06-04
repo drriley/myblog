@@ -7,7 +7,8 @@
     "express": "3.x",
     "mongoose": "3.8.x",
     "ejs": "1.0.0",
-    "connect-busboy": "0.0.x"
+    "connect-busboy": "0.0.x",
+	"mailchimp-api": "*"
   },
   "subdomain": "rashaun24.sampleapp",
   "domains": [
