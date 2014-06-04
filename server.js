@@ -1,20 +1,23 @@
 var express  = require('express');
-var http = require('http');
+var http = require('http'),
+inspect = require('util').inspect;
 var app      = express();
-var port     = process.env.PORT || 3000;
+var port     = process.env.PORT || 8080;
 var mongoose = require('mongoose');
 var path = require('path');
 global.setImmediate = global.setImmediate || process.nextTick.bind(process)
+var busboy = require('connect-busboy');
 
 // configuration ===============================================================
 
 
 app.configure(function() {
   app.set('views', __dirname + '/views');
+  app.use(express.json());
+  app.use(express.urlencoded());
+  app.use(busboy({ immediate: true }));
 	// set up our express application
 	app.use(express.logger('dev')); // log every request to the console
-	app.use(express.cookieParser()); // read cookies (needed for auth)
-	app.use(express.bodyParser()); // get information from html forms
   app.use(express.static(path.join(__dirname, 'public')));
   
 	app.set('view engine', 'ejs'); // set up ejs for templating
@@ -40,31 +43,14 @@ app.get('/resume', function(req, res){
   res.render('resume.ejs');
 });
 
-
 // launch ======================================================================
 //socketIO
 
 var server = http.createServer(app);
-//var io = require('socket.io').listen(server);
-server.listen(3000);
 
-//io.sockets.on('connection', function (socket) {
-    
-//    socket.on('setPseudo', function (data) {
-//        socket.set('pseudo', data);
-//    });
-    
-//    socket.on('message', function (message) {
-//        socket.get('pseudo', function (error, name) {
-//            var data = { 'message' : message, pseudo : name };
-//            socket.broadcast.emit('message', data);
-//            console.log("user " + name + " send this : " + message);
-//        })
-//    });
-    
-    
+server.listen(8080);
 
-//});
+
 
 
 console.log('The magic happens on port ' + port);
