@@ -1,3 +1,29 @@
+ #blogpostdiv
+ {
+    
+    padding-left: 50px;
+    padding-top: 25px;
+    width: 800px;
+    
+   
+   
+ }
+ 
+ #posting{
+   width: 300px;
+    padding-left: 50px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      
+ }
+ 
+ 
+ #blogdate
+ {
+    padding-left: 50px;
+     padding-top: 25px;
+   
+ }
  #resumenav
  {
    width: 250px;
@@ -35,6 +61,14 @@
    
  }
  
+ #blogtext
+ {
+   width: 550px;
+   max-width:550px;
+   
+ }
+ 
+ 
  #emailbutton
  {
    width: 50px;
@@ -46,7 +80,7 @@
    
    max-width:250px;
    background-color:#D8D8D8;
-   padding-bottom:15px;
+   padding-bottom:20px;
    overflow: hidden;
    vertical-align: bottom
    
@@ -105,7 +139,8 @@ background-color:#FFF;
 
 #disqus
 {
-  
+  width: 450px;
+   max-width:450px;
   background-color:#F7D358;
   
 }

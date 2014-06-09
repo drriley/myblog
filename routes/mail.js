@@ -17,7 +17,8 @@ exports.subscribe = function(req, res){
     },
     function(error) {
       if (error.error) {
-        req.session.error_flash = error.code + ": " + error.error;
+        res.writeHead(400);
+         res.end();
       } else {
         req.session.error_flash = 'There was an error subscribing that user';
       }

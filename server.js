@@ -39,7 +39,7 @@ app.get('/', function(req, res){
 });
 
 
-app.get('/blog1', function(req, res){
+app.get('/greathabits', function(req, res){
   res.render('blog1.ejs');
 });
 

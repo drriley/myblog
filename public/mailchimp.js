@@ -1,5 +1,6 @@
 $(function() {
   $('#thankyou').hide();
+  $('#error').hide();
 });
 
  
@@ -14,8 +15,12 @@ $(function() {
   			success: function(data) {
   			console.log('ok');
   			$('#subscribe').hide();
+  			$('#error').hide();
   			$('#thankyou').fadeIn();
-  			}
+  			},
+  			error: function (xhr, ajaxOptions, thrownError) {
+                $('#error').fadeIn();
+              }
   	});
   	return false;	
   }
